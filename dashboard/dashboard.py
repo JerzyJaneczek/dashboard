@@ -80,7 +80,7 @@ def render_tab_content(active_tab):
 )
 def renderImage(active_tab):
     if active_tab == "q4":
-        image_path1 = './assets/figure1.png'
+        image_path1 = 'https://newdashboard.onrender.com/assets/figure1.png'
         image_path2 = './assets/figure2.png'
         image_path3 = './assets/figure3.png'
         image_path4 = './assets/figure4.png'
