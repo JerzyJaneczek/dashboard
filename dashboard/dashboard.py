@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 from dash import Input, Output, dcc, html
 import pandas as pd
 import plotly.express as px
-import pybase64
+#import pybase64
 
 app = dash.Dash(external_stylesheets=[
                 dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
@@ -48,27 +48,27 @@ app.layout = dbc.Container(
 )
 
 # Images
-# image1 = html.Img(src='', id='image1')
-# image2 = html.Img(src='', id='image2')
-# image3 = html.Img(src='', id='image3')
-# image4 = html.Img(src='', id='image4')
-# image5 = html.Img(src='', id='image5')
-# image6 = html.Img(src='', id='image6', style={"width": '70%'})
+image1 = html.Img(src='', id='image1')
+image2 = html.Img(src='', id='image2')
+image3 = html.Img(src='', id='image3')
+image4 = html.Img(src='', id='image4')
+image5 = html.Img(src='', id='image5')
+image6 = html.Img(src='', id='image6', style={"width": '70%'})
 
 
-def b64_image(image_filename):
-    with open(image_filename, 'rb') as f:
-        image = f.read()
-    return 'data:image/png;base64,' + pybase64.b64encode(image).decode('utf-8')
+# def b64_image(image_filename):
+#     with open(image_filename, 'rb') as f:
+#         image = f.read()
+#     return 'data:image/png;base64,' + pybase64.b64encode(image).decode('utf-8')
 
 
-# Images
-image1 = html.Img(src=b64_image('./assets/figure1.png'), id="image1")
-image2 = html.Img(src=b64_image('./assets/figure2.png'), id="image2")
-image3 = html.Img(src=b64_image('./assets/figure3.png'), id="image3")
-image4 = html.Img(src=b64_image('./assets/figure4.png'), id="image4")
-image5 = html.Img(src=b64_image('./assets/Shap.png'), id="image5")
-image6 = html.Img(src=b64_image('./assets/ShapAnalysis.png'), id="image6")
+# # Images
+# image1 = html.Img(src=b64_image('./assets/figure1.png'), id="image1")
+# image2 = html.Img(src=b64_image('./assets/figure2.png'), id="image2")
+# image3 = html.Img(src=b64_image('./assets/figure3.png'), id="image3")
+# image4 = html.Img(src=b64_image('./assets/figure4.png'), id="image4")
+# image5 = html.Img(src=b64_image('./assets/Shap.png'), id="image5")
+# image6 = html.Img(src=b64_image('./assets/ShapAnalysis.png'), id="image6")
 
 @app.callback(
     Output("tab-content", "children"),
