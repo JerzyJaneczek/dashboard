@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 from dash import Input, Output, dcc, html
 import pandas as pd
 import plotly.express as px
-import base64
+import pybase64
 
 app = dash.Dash(external_stylesheets=[
                 dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
