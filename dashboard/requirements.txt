@@ -2,5 +2,5 @@ dash==2.11.1
 dash_bootstrap_components
 pandas
 plotly.express
-base64
+pybase64
 gunicorn
