@@ -98,7 +98,7 @@ def renderImage(active_tab):
         image_path1 = 'https://newdashboard.onrender.com/assets/figure1.png'
         image_path2 = './assets/figure2.png'
         image_path3 = './assets/figure3.png'
-        image_path4 = './assets/figure4.png'
+        image_path4 = 'assets/AUCPlot.png'
         return image_path1, image_path2, image_path3, image_path4
 
 
